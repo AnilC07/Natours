@@ -1,5 +1,4 @@
-// Ajouter un element apres l'element qui effacera ensuite ces element flottaants
-
+// Après le float, ajoute une table avec un clear both qui force la suite des éléments a aller a la ligne
 @mixin clearfix {
     &::after{
         content:"";
