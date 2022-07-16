@@ -60,7 +60,7 @@
 
   //Front side styling
 
-  //On remonte d'un niveau car au final le code est compilé dans le main.css
+  //On remonte d'un niveau car il faut tenir compte du fait que le code est compilé dans le main.css
   &__picture {
     background-size: cover;
     height: 23rem;
