@@ -2,6 +2,7 @@
 
   /* Formatage des deux comportement par default de la balise <a> */
   &:link,
+  &,
   &:visited {
     display: inline-block;
     text-transform: uppercase;
@@ -12,6 +13,10 @@
     position: relative;
     /* necessaire pour l'elemnet after qui suit */
     font-size: $default-font-size;
+
+    // change for the <button> element
+    border: none;
+    cursor: pointer;
   }
 
   &--white {
@@ -42,7 +47,8 @@
     }
   }
 
-  &:active {
+  &:active, &:focus {
+    outline: none;
     transform: translateY(-0.2rem);
     box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
   }
